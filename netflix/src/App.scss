@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+$bg : rgb(10, 10, 10);
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+    // color: white;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+a,h2{
+    color: white
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10;
+}
+.header{
+    background-color: $bg;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    >img{
+        height: 80%;
+        padding: 0px 11px;
+    }
+
+    >div{
+        // border: 1px solid red;
+        // padding: 0px 20px;
+        width: 100%;
+        margin: 2vmax 2vmax 2vmax 2vmax;
+
+        > a{
+            text-decoration: none;
+            margin: 1vmax;
+            padding: 1vmax;
+            font-size: 1.1rem;
+            // font-weight: 300;
+
+            &:hover{
+                color: rgb(202, 195, 195);
+            }
+        }
+    }
+
+    >svg{
+        color: white;
+        font-size: 1.5rem;
+        padding: 0px 19px 2px 5px;
+        cursor: pointer; 
+        
+        &:hover{  //same as >svg:hover
+            color: rgb(202, 194, 194);
+        }
+    }
+
+}
+
+
+footer{
+    height: 20px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+}
